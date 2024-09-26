@@ -19,6 +19,7 @@ const Calculator = () => {
 
   const calculate = () => {
     try {
+      // eslint-disable-next-line no-eval
       setResult(eval(input).toString());
     } catch (error) {
       setResult('Error');
